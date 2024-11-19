@@ -12,7 +12,7 @@ import { IoSettingsOutline } from "react-icons/io5";
 const LeftSidebar = () => {
   const pathName = usePathname();
   return (
-    <div className="bg-gray-100 border-r-2 p-4 md:w-[250px]">
+    <div className="pt-12 border-r-2 p-4 md:w-[270px]">
       <ul className="flex flex-col gap-3">
         <Link
           href="/"
