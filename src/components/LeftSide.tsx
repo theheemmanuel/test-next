@@ -9,7 +9,7 @@ import { IoWalletOutline } from "react-icons/io5";
 import { RiAccountCircleLine } from "react-icons/ri";
 import { IoSettingsOutline } from "react-icons/io5";
 
-const LeftSidebar = () => {
+const LeftSide = () => {
   const pathName = usePathname();
   return (
     <div className="pt-12 border-r-2 p-4 md:w-[270px]">
@@ -74,4 +74,4 @@ const LeftSidebar = () => {
   );
 };
 
-export default LeftSidebar;
+export default LeftSide;
