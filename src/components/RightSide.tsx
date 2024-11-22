@@ -7,12 +7,12 @@ interface User {
 
 const RightSide = async () => {
   const res = await fetch("https://jsonplaceholder.typicode.com/users", {
-    // next: { revalidate: 10 },
+    next: { revalidate: 10 },
     // cache: "no-store",
   });
   const users: User[] = await res.json();
 
-  console.log(users);
+  // console.log(users);
   return (
     <div>
       <div>
