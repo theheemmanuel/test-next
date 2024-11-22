@@ -28,7 +28,9 @@ const LeftSide = () => {
         <Link
           href="/orders"
           className={`${
-            pathName === "/orders" ? "font-bold bg-orange-500 rounded-lg" : ""
+            pathName.includes("/orders")
+              ? "font-bold bg-orange-500 rounded-lg"
+              : ""
           } px-4 py-2`}
         >
           <div className="flex gap-2 items-center cursor-pointer">
@@ -39,7 +41,9 @@ const LeftSide = () => {
         <Link
           href="/wallet"
           className={`${
-            pathName === "/wallet" ? "font-bold bg-orange-500 rounded-lg" : ""
+            pathName.includes("/wallet")
+              ? "font-bold bg-orange-500 rounded-lg"
+              : ""
           } px-4 py-2`}
         >
           <div className="flex gap-2 items-center cursor-pointer">
@@ -50,7 +54,9 @@ const LeftSide = () => {
         <Link
           href="/profile"
           className={`${
-            pathName === "/profile" ? "font-bold bg-orange-500 rounded-lg" : ""
+            pathName.includes("/profile")
+              ? "font-bold bg-orange-500 rounded-lg"
+              : ""
           } px-4 py-2`}
         >
           <div className="flex gap-2 items-center cursor-pointer">
@@ -61,7 +67,9 @@ const LeftSide = () => {
         <Link
           href="/settings"
           className={`${
-            pathName === "/settings" ? "font-bold bg-orange-500 rounded-lg" : ""
+            pathName.includes("/settings")
+              ? "font-bold bg-orange-500 rounded-lg"
+              : ""
           } px-4 py-2`}
         >
           <div className="flex gap-2 items-center cursor-pointer">
