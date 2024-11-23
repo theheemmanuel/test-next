@@ -22,7 +22,7 @@ const LeftSide = () => {
         >
           <div className="flex gap-2 items-center cursor-pointer">
             <IoHomeOutline size={20} />
-            <p className="text-lg">Home</p>
+            <p className="text-lg max-md:hidden">Home</p>
           </div>
         </Link>
         <Link
@@ -35,7 +35,7 @@ const LeftSide = () => {
         >
           <div className="flex gap-2 items-center cursor-pointer">
             <RiListOrdered2 size={20} />
-            <p className="text-lg">My Orders</p>
+            <p className="text-lg max-md:hidden">My Orders</p>
           </div>
         </Link>
         <Link
@@ -48,7 +48,7 @@ const LeftSide = () => {
         >
           <div className="flex gap-2 items-center cursor-pointer">
             <IoWalletOutline size={20} />
-            <p className="text-lg">My Wallet</p>
+            <p className="text-lg max-md:hidden">My Wallet</p>
           </div>
         </Link>
         <Link
@@ -61,7 +61,7 @@ const LeftSide = () => {
         >
           <div className="flex gap-2 items-center cursor-pointer">
             <RiAccountCircleLine size={20} />
-            <p className="text-lg">Profile</p>
+            <p className="text-lg max-md:hidden">Profile</p>
           </div>
         </Link>
         <Link
@@ -74,7 +74,7 @@ const LeftSide = () => {
         >
           <div className="flex gap-2 items-center cursor-pointer">
             <IoSettingsOutline size={20} />
-            <p className="text-lg">Settings</p>
+            <p className="text-lg max-md:hidden">Settings</p>
           </div>
         </Link>
       </ul>

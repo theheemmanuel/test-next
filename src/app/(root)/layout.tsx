@@ -7,7 +7,7 @@ const layout = ({ children }: { children: React.ReactNode }) => {
     <div className="min-h-screen mx-auto flex">
       <LeftSide />
       <div className="flex-1">{children}</div>
-      <div className="hidden lg:block">
+      <div className="md:hidden block">
         <RightSide />
       </div>
     </div>
