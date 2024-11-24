@@ -6,20 +6,30 @@ interface Users {
 }
 
 const Users = async () => {
-  const res = await fetch(process.env.NEXT_PUBLIC_SUPABASE_URL!, {
-    headers: {
-      apikey: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
-      Authorization: `Bearer ${process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!}`,
-    },
-    // next: { revalidate: 10 },
-    cache: "no-store",
-  });
-  const users: Users[] = await res.json();
+  let users: Users[] = [];
+
+  try {
+    const res = await fetch(process.env.NEXT_PUBLIC_SUPABASE_URL!, {
+      headers: {
+        apikey: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+        Authorization: `Bearer ${process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!}`,
+      },
+      cache: "no-store",
+      // next: { revalidate: 10 },
+    });
+    users = await res.json();
+
+    if (!res.ok) {
+      throw new Error("Failed to fetch users");
+    }
+  } catch (err) {
+    console.log(err);
+  }
+
   return (
     <div>
-      {users.map((each) => (
-        <div key={each.id}>{each.name}</div>
-      ))}
+      {users.length > 0 &&
+        users.map((each) => <div key={each.id}>{each.name}</div>)}
     </div>
   );
 };
