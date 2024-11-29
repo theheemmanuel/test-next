@@ -14,8 +14,8 @@ const Users = async () => {
         apikey: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
         Authorization: `Bearer ${process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!}`,
       },
-      cache: "no-store",
-      // next: { revalidate: 10 },
+      // cache: "no-store",
+      next: { revalidate: 10 },
     });
     users = await res.json();
 

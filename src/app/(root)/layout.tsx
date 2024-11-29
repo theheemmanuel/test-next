@@ -1,14 +1,14 @@
+import Header from "@/components/Header";
 import LeftSide from "@/components/LeftSide";
-import RightSide from "@/components/RightSide";
 import React from "react";
 
 const layout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="min-h-screen mx-auto flex">
+    <div className="min-h-screen mx-auto flex font-montserrat">
       <LeftSide />
-      <div className="flex-1">{children}</div>
-      <div className="md:hidden block">
-        <RightSide />
+      <div className="flex-1">
+        <Header />
+        {children}
       </div>
     </div>
   );
