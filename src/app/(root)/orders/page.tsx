@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Orders = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  return <div className="px-6">Orders Page</div>;
+};
 
-export default Orders
+export default Orders;

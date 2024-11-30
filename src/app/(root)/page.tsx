@@ -9,7 +9,7 @@ const Home = () => {
       <div className="flex px-6 gap-4">
         <div className="flex-1">
           <h1 className="font-semibold text-lg">
-            Promote your social accounts
+            Promote your social accounts!
           </h1>
           <Suspense
             fallback={

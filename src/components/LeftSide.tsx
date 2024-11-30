@@ -9,7 +9,7 @@ import { IoWalletOutline } from "react-icons/io5";
 import { RiAccountCircleLine } from "react-icons/ri";
 import { IoSettingsOutline } from "react-icons/io5";
 import Image from "next/image";
-import logo from "../assets/images/logo.png";
+import logo from "/public/assets/images/logo.png";
 
 const LeftSide = () => {
   const pathName = usePathname();
