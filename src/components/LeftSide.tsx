@@ -14,16 +14,16 @@ import logo from "/public/assets/images/logo.png";
 const LeftSide = () => {
   const pathName = usePathname();
   return (
-    <div className="border-r-2 p-6 md:w-[270px]">
+    <div className="border-r-2 p-6 md:w-[250px] max-sm:hidden">
       <ul className="flex flex-col gap-3">
-        <Image src={logo} alt="logo" className="rounded-xl p-2" />
+        <Image src={logo} alt="logo" className="rounded-xl p-2 max-md:w-20" />
         <Link
           href="/"
           className={`${
             pathName === "/" ? "font-bold bg-orange-500" : ""
           } px-4 py-2 hover:bg-orange-500 rounded-lg`}
         >
-          <div className="flex gap-2 items-center cursor-pointer">
+          <div className="flex gap-2 items-center cursor-pointer max-md:justify-center">
             <IoHomeOutline size={20} />
             <p className="text-lg max-md:hidden">Home</p>
           </div>
@@ -34,7 +34,7 @@ const LeftSide = () => {
             pathName.includes("/orders") ? "font-bold bg-orange-500" : ""
           } px-4 py-2 hover:bg-orange-500 rounded-lg`}
         >
-          <div className="flex gap-2 items-center cursor-pointer">
+          <div className="flex gap-2 items-center cursor-pointer max-md:justify-center">
             <RiListOrdered2 size={20} />
             <p className="text-lg max-md:hidden">My Orders</p>
           </div>
@@ -45,7 +45,7 @@ const LeftSide = () => {
             pathName.includes("/wallet") ? "font-bold bg-orange-500" : ""
           } px-4 py-2 hover:bg-orange-500 rounded-lg`}
         >
-          <div className="flex gap-2 items-center cursor-pointer">
+          <div className="flex gap-2 items-center cursor-pointer max-md:justify-center">
             <IoWalletOutline size={20} />
             <p className="text-lg max-md:hidden">My Wallet</p>
           </div>
@@ -56,7 +56,7 @@ const LeftSide = () => {
             pathName.includes("/profile") ? "font-bold bg-orange-500" : ""
           } px-4 py-2 hover:bg-orange-500 rounded-lg`}
         >
-          <div className="flex gap-2 items-center cursor-pointer">
+          <div className="flex gap-2 items-center cursor-pointer max-md:justify-center">
             <RiAccountCircleLine size={20} />
             <p className="text-lg max-md:hidden">Profile</p>
           </div>
@@ -67,7 +67,7 @@ const LeftSide = () => {
             pathName.includes("/settings") ? "font-bold bg-orange-500" : ""
           } px-4 py-2 hover:bg-orange-500 rounded-lg`}
         >
-          <div className="flex gap-2 items-center cursor-pointer">
+          <div className="flex gap-2 items-center cursor-pointer max-md:justify-center">
             <IoSettingsOutline size={20} />
             <p className="text-lg max-md:hidden">Settings</p>
           </div>
