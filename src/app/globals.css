@@ -68,6 +68,12 @@
   }
 }
 
+@layer utilities {
+  .flex-center {
+    @apply flex justify-between items-center;
+  }
+}
+
 .mainBody {
   background-image: url(/assets/images/bg-KhfgLdfN.png);
   background-size: cover;
