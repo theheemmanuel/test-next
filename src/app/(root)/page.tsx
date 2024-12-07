@@ -1,7 +1,7 @@
-import { SkeletonCircle } from "@/components/Loading";
+// import { SkeletonCircle } from "@/components/Loading";
 import RightSide from "@/components/RightSide";
-import Socials from "@/components/Socials";
-import React, { Suspense } from "react";
+import React from "react";
+import SocialList from "@/components/SocialList";
 
 const Home = () => {
   return (
@@ -11,17 +11,7 @@ const Home = () => {
           <h1 className="font-semibold text-lg">
             Promote your social accounts!
           </h1>
-          <Suspense
-            fallback={
-              <div className="flex flex-wrap gap-6">
-                {[1, 2, 3, 4, 5].map((each) => (
-                  <SkeletonCircle key={each} />
-                ))}
-              </div>
-            }
-          >
-            <Socials />
-          </Suspense>
+          <SocialList />
         </div>
         <div className="lg:block hidden w-1/3">
           <RightSide />

@@ -6,7 +6,7 @@ interface Users {
   name: string;
 }
 
-const Socials = async () => {
+const Fetch = async () => {
   let users: Users[] = [];
 
   try {
@@ -44,4 +44,4 @@ const Socials = async () => {
   );
 };
 
-export default Socials;
+export default Fetch;
