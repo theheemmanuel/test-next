@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Empty from "./Empty";
 
 const RightSide = () => {
   return (
@@ -19,6 +20,7 @@ const RightSide = () => {
           </Link>
         </div>
       </div>
+      <Empty textBody="You have no recent orders" />
     </div>
   );
 };

@@ -2,7 +2,6 @@
 import React from "react";
 import RightSide from "@/components/RightSide";
 import SocialList from "@/components/SocialList";
-import Users from "@/components/Users";
 
 const Home = () => {
   return (
@@ -13,7 +12,6 @@ const Home = () => {
             Promote your social accounts!
           </h1>
           <SocialList />
-          <Users/>
         </div>
         <div className="lg:block hidden w-1/3">
           <RightSide />

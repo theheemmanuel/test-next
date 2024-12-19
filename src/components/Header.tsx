@@ -25,12 +25,12 @@ const Header = () => {
   const pathName = usePathname();
   return (
     <>
-      <div className="p-6 flex justify-between gap-6 items-center">
+      <div className="md:p-6 p-4 flex justify-between gap-6 items-center">
         <div className="flex items-center gap-4">
           <Skeleton className="h-10 w-10 rounded-full bg-zinc-400" />
           <div>
             <h1 className="text-xl">
-              Welcome 👋, <span className="font-bold">Oluwatosin</span>
+              Welcome 👋 <span className="font-bold">Oluwatosin</span>
             </h1>
           </div>
         </div>
