@@ -8,7 +8,7 @@ const Wallet = () => {
       <div className="flex">
         <div className="flex-1">
           <h1 className="font-bold text-xl">My Wallet</h1>
-          <Empty />
+          <Empty textBody="No Wallet History" />
         </div>
         <div className="lg:block hidden w-1/3">
           <RightSide />
