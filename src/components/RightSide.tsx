@@ -20,7 +20,7 @@ const RightSide = () => {
           </Link>
         </div>
       </div>
-      <Empty textBody="You have no recent orders" />
+      <Empty textBody="No recent orders" />
     </div>
   );
 };

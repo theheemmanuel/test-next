@@ -5,7 +5,7 @@ const Orders = () => {
   return (
     <div className="px-6">
       <h1 className="font-bold text-xl">My Orders</h1>
-      <Empty textBody="   Looks like you dont have any task available yet. Keep an eye out for important updates from us." />
+      <Empty textBody="No Orders Found." />
       <div></div>
     </div>
   );
